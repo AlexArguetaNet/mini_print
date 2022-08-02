@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186471675293",
+    "project_id": "mini-print-cfd88",
+    "storage_bucket": "mini-print-cfd88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186471675293:android:4b7475f74679e0fc63ab74",
+        "android_client_info": {
+          "package_name": "com.example.miniprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186471675293-unrn76pipmh913kgef94825mk49bf9hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9LZAqzb7pfd98sj7wJta8Eg1Jv4ViCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186471675293-unrn76pipmh913kgef94825mk49bf9hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
