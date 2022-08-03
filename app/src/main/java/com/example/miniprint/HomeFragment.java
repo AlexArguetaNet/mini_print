@@ -121,8 +121,9 @@ public class HomeFragment extends Fragment {
                 
                 // Extract data from API response
                 NewsResponse newsRsp = (NewsResponse) msg.getData().getSerializable("NEWS_RESPONSE");
-                Article topArticle = newsRsp.articles.get(0);
+                Article topArticle = newsRsp.articles.get(1);
 
+                // Showing top headline in the top CardView
                 Picasso.get().load(topArticle.urlToImage).into(imageViewTopHeadline);
                 textViewTopHeadlineTitle.setText(topArticle.title);
                 textViewTopSource.setText(topArticle.source.name);
@@ -146,7 +147,7 @@ public class HomeFragment extends Fragment {
     public void getNewsHeadlines() {
 
         Request request = new Request.Builder()
-                .url("https://newsapi.org/v2/top-headlines?country=us&apiKey=38660587ad8b4aceb8f1695c746330ea")
+                .url("https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=38660587ad8b4aceb8f1695c746330ea")
                 .build();
         
         client.newCall(request).enqueue(new Callback() {
